@@ -1243,7 +1243,7 @@ footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--border);text-
   const g = (id) => document.getElementById(id);
   const $ = (sel, root) => (root||document).querySelector(sel);
 
-  const API_BASE = '/api/tiktok';
+  const API_BASE = 'https://tiktok-nowatermark-api-w09u.onrender.com';
   // NOTE: The backend exposes real ROUTES as PATHS, not as `?route=` query params.
   // The old `?route=download` style hit the server root, which returns a welcome
   // JSON (no `success` field) — that made every request look like a failure.
@@ -1251,7 +1251,7 @@ footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--border);text-
   const API_USER     = API_BASE + '/user';
   const API_COMMENTS = API_BASE + '/comments';
 
-  const PROFILE_API_BASE = '/api/profile';
+  const PROFILE_API_BASE = 'https://tiktok-checker-backend.onrender.com';
   // Profile API expects the username as a URL PATH segment: /tiktok/<username>
   // (the old `?username=` variant hit the root and returned a status blurb).
   const API_PROFILE      = PROFILE_API_BASE + '/tiktok/';
